@@ -17,7 +17,7 @@ function App() {
           <ul className='nav'>
           <div className="logo">Efrem</div>
             <li>
-              <NavLink to="/" activeClassName="active">Start</NavLink>
+              <NavLink to="/home" activeClassName="active">Start</NavLink>
             </li>
             <li>
               <NavLink to="/cv" activeClassName="active">CV</NavLink>
@@ -38,7 +38,7 @@ function App() {
         </nav>
 
         <Routes>
-          <Route path="/" exact element={<Home />} />
+          <Route path="/home" exact element={<Home />} />
           <Route path="/cv" element={<CV />} />
           <Route path="/about" element={<AboutMe />} />
           <Route path="/kontakt" element={<Kontakt />} />
